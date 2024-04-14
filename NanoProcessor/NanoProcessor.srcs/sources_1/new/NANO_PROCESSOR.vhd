@@ -35,8 +35,7 @@ entity NANO_PROCESSOR is
     Port ( Clk : in STD_LOGIC;
            Reset : in STD_LOGIC;
            Display : out STD_LOGIC_VECTOR (3 downto 0);
-           Zero_Flag : out STD_LOGIC;
-           Carry_Flag : out STD_LOGIC);
+           Flags : out STD_LOGIC_VECTOR( 3 downto 0));
 end NANO_PROCESSOR;
 
 architecture Behavioral of NANO_PROCESSOR is
@@ -232,8 +231,7 @@ begin
             A => Mem_Selector,
             S => Output_3bit_Adder );                 
  
-Display <= R7_Out;
-Zero_Flag <= Flag_Reg(2);
-Carry_Flag <= Flag_Reg(0);                   
+Display <= R7_Out; 
+Flags <= Flag_Reg;                 
                                           
 end Behavioral;
