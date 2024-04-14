@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr 14 18:07:56 2024
+# Process ID: 31080
+# Current directory: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33532 C:\Users\induw\OneDrive - University of Moratuwa\Desktop\NanoProcessor\NanoProcessor.xpr
+# Log file: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/vivado.log
+# Journal file: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/TB_NANO_PROCESSOR_behav.wcfg'; using path 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor/TB_NANO_PROCESSOR_behav.wcfg' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.ip_user_files'; using path 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor/NanoProcessor.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 872.918 ; gain = 102.238
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_NANO_PROCESSOR' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_NANO_PROCESSOR_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/ADDER_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ADDER_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/ADDER_SUBTRACTOR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ADDER_SUBTRACTOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/D_FF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/Decoder_2_to_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_2_to_4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/Decoder_3_to_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_3_to_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/INSTRUCTION_DECODER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity INSTRUCTION_DECODER
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_2way_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2way_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_2way_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2way_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_8_to_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_8_to_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_8way_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_8way_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/NANO_PROCESSOR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NANO_PROCESSOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/REGISTER_BANK.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REGISTER_BANK
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/Reg_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Reg_4_bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sources_1/new/Tri_State_Buff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Tri_State_Buff
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_NANO_PROCESSOR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_NANO_PROCESSOR
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 915.727 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto d6cbd37f454b4e08bb94303a8c811989 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_NANO_PROCESSOR_behav xil_defaultlib.TB_NANO_PROCESSOR -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Tri_State_Buff [tri_state_buff_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.INSTRUCTION_DECODER [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTER_BANK [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8_to_1 [mux_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADDER_SUBTRACTOR [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADDER_3bit [adder_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NANO_PROCESSOR [nano_processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nano_processor
+Built simulation snapshot TB_NANO_PROCESSOR_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 915.727 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_NANO_PROCESSOR_behav -key {Behavioral:sim_1:Functional:TB_NANO_PROCESSOR} -tclbatch {TB_NANO_PROCESSOR.tcl} -view {{C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor/TB_NANO_PROCESSOR_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor/TB_NANO_PROCESSOR_behav.wcfg}
+source TB_NANO_PROCESSOR.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 915.941 ; gain = 0.215
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_NANO_PROCESSOR_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 915.941 ; gain = 0.215
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns

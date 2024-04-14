@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr 14 18:07:56 2024
+# Process ID: 31080
+# Current directory: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33532 C:\Users\induw\OneDrive - University of Moratuwa\Desktop\NanoProcessor\NanoProcessor.xpr
+# Log file: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/vivado.log
+# Journal file: C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/induw/OneDrive - University of Moratuwa/Desktop/NanoProcessor/NanoProcessor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/induw/OneDrive - University of Moratuwa/Desktop/Nano Processor/TB_NANO_PROCESSOR_behav.wcfg}
+source TB_NANO_PROCESSOR.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
