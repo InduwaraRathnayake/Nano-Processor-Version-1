@@ -41,9 +41,9 @@ end MUX_2way_4bit;
 architecture Behavioral of MUX_2way_4bit is
 
 
-begin
+begin 
     Mux_out(0) <= (A(0) and not Selector) or (B(0) and Selector);
-    Mux_out(1) <= (A(1) and not Selector) or (B(1) and Selector);
+    Mux_out(1) <= (A(1) and not Selector) or (B(1) and Selector); 
     Mux_out(2) <= (A(2) and not Selector) or (B(2) and Selector);
     Mux_out(3) <= (A(3) and not Selector) or (B(3) and Selector);
 

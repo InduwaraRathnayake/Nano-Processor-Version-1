@@ -36,10 +36,6 @@ entity ADDER_SUBTRACTOR is
            B : in STD_LOGIC_VECTOR (3 downto 0);
            M : in STD_LOGIC;
            S : out STD_LOGIC_VECTOR (3 downto 0);
---           Overflow_Flag : out STD_LOGIC;
---           C_out : out STD_LOGIC;
---           Zero_Flag : out STD_LOGIC;
---           Sign_flag : out STD_LOGIC
            Flag_Reg : out STD_LOGIC_VECTOR (3 downto 0));
            
 end ADDER_SUBTRACTOR;
@@ -100,18 +96,14 @@ begin
             C_out => C4
         );
         
---    C_out <= C4;    
-        S <= OutSum ;
+        S <= OutSum ;                          
         OverFlow <= C4 XOR C3;
     
---    Sign_Flag <= OutSum(3); --OutSum(3) AND NOT(OverFlow);
---    Zero_Flag <= NOT (OutSum(0) OR OutSum(1) OR OutSum(2) OR OutSum(3)); --- Dont want C4
---    Overflow_Flag <= OverFlow;
+--      Sign_Flag <= OutSum(3);           -- OutSum(3) AND NOT(OverFlow);
     
         Flag_Reg(0) <= C4;                                                                          --C
         Flag_Reg(1) <= OverFlow;                                                                    --O
         Flag_Reg(2) <= NOT (OutSum(0) OR OutSum(1) OR OutSum(2) OR OutSum(3));                      --Z
         Flag_Reg(3) <= OutSum(3);                                                                   --S
      
-
 end Behavioral;

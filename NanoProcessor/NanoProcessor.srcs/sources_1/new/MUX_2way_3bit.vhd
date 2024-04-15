@@ -46,23 +46,13 @@ component Tri_State_Buff is
            Q : out STD_LOGIC_VECTOR (2 downto 0));
 end component;
 
---component Decoder_1_to_2 
---    Port ( I : in STD_LOGIC;
---           EN : in STD_LOGIC;
---           Y : out STD_LOGIC_VECTOR (1 downto 0));
---end component;
-
 signal enable_signals : STD_LOGIC_VECTOR(1 downto 0) := "01" ;
 
 begin
---     Decoder : Decoder_1_to_2
---        port map (
---            I => Selector,
---            EN => '1',
---            Y => enable_signals
---           );
-     enable_signals(0) <= NOT Selector;        
-     enable_signals(1) <= Selector; 
+
+     enable_signals(0) <= NOT Selector;    --   selector        enable_signals  
+     enable_signals(1) <= Selector; --             0                01               
+                                    --             1                10
             
      buffer_0: Tri_State_Buff
            port map (
@@ -78,18 +68,4 @@ begin
                Q => Output
            );
            
---process (Selector)
---   begin
---       case Selector is
---           when '0' => enable_signals <= "01";
---           when '1' => enable_signals <= "10";
---           when others => enable_signals <= "00";
---       end case;
---   end process;
-
---    Output(0) <= (A1(0) and not Selector) or (A2(0) and Selector);
---    Output(1) <= (A1(1) and not Selector) or (A2(1) and Selector);
---    Output(2) <= (A1(2) and not Selector) or (A2(2) and Selector);
- 
-
 end Behavioral;
