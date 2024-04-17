@@ -79,9 +79,7 @@ begin
             Address_to_Jump <= Instruction_Bus(2 downto 0);
             Reg_Sele1 <= Instruction_Bus(9 downto 7); 
             if Reg_Check_Jump = "0000" then 
-                Jump_Flag <= '1';
---            else
---                Jump_Flag <= '0';                
+                Jump_Flag <= '1';             
             end if;                             
         end if;
     end process;
