@@ -41,12 +41,9 @@ component NANO_PROCESSOR
     Port ( Clk : in STD_LOGIC;
            Reset : in STD_LOGIC;
            Display : out STD_LOGIC_VECTOR (3 downto 0);
---           Zero_Flag : out STD_LOGIC;
---           Carry_Flag : out STD_LOGIC);
            Flags : out STD_LOGIC_VECTOR( 3 downto 0));
 end component;
 
---signal Reset, Zero_Flag, Carry_Flag : std_logic;
 signal Reset : std_logic;
 signal Flags : std_logic_vector (3 downto 0);
 signal Display : std_logic_vector (3 downto 0);
@@ -58,8 +55,6 @@ begin
             Clk => Clk,
             Reset => Reset,
             Display => Display,
---            Zero_Flag => Zero_Flag,
---            Carry_Flag => Carry_Flag);
             Flags => Flags);
             
     process begin 
