@@ -52,22 +52,27 @@ begin
     Operator <= Instruction_Bus(11 downto 10);
     
     process (Operator, Instruction_Bus, Reg_Check_Jump) begin
+        
+        Add_Sub_Sele <= '0';
         Jump_Flag <= '0';
+        Load_Sele <= '0';
+        Reg_Sele1 <= "000"; 
+        Reg_Sele2 <= "000";
+        Immediate_Value <= "0000";
+        Reg_EN <= "110"; -- Enable the dummy register
+        Address_to_Jump <= "000";
+ 
                      
         if Operator = "00" then 
             Reg_Sele1 <= Instruction_Bus(9 downto 7);
-            Reg_Sele2 <= Instruction_Bus(6 downto 4);
-            Add_Sub_Sele <= '0';
-            Load_Sele <= '0';            
+            Reg_Sele2 <= Instruction_Bus(6 downto 4);           
             Reg_EN <= Instruction_Bus(9 downto 7);
            
         elsif Operator = "01" then 
 
             Reg_EN <= Instruction_Bus(9 downto 7);
-            Reg_Sele1 <= "000";
             Reg_Sele2 <= Instruction_Bus(9 downto 7);
             Add_Sub_Sele <= '1';
-            Load_Sele <= '0';
                                             
         elsif Operator = "10" then 
                         

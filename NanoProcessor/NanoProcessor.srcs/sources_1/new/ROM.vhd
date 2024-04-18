@@ -43,14 +43,14 @@ architecture Behavioral of ROM is
 type rom_type is array (0 to 7) of std_logic_vector(11 downto 0);
 signal prosseser_ROM : rom_type := (
 
-    "100010000100", -- MOVI R1,4        R1 <- 4
-    "100100000001", -- MOVI R2,1        R2 <- 1
-    "010100000000", -- NEG  R2          R2 <- -1 
-    "000010100000", -- ADD  R1,R2       R1 <- R2 + R1 
-    "110010000111", -- JZR  R1,7    
-    "001110010000", -- ADD  R7,R1       R7 <- R7 + R1
-    "110000000011", -- JZR  R0,3
-    "110000000111" -- JZR  R0,7            
+    "100010000100", -- MOVI R1,4        R1 <- 4         0
+    "100100000001", -- MOVI R2,1        R2 <- 1         1
+    "010100000000", -- NEG  R2          R2 <- -1        2
+    "000010100000", -- ADD  R1,R2       R1 <- R2 + R1   3  
+    "110010000111", -- JZR  R1,7                        4   
+    "001110010000", -- ADD  R7,R1       R7 <- R7 + R1   5
+    "110000000011", -- JZR  R0,3                        6
+    "110000000111" -- JZR  R0,7                         7          
 
     ); 
 
