@@ -59,7 +59,7 @@ begin
         Reg_Sele1 <= "000"; 
         Reg_Sele2 <= "000";
         Immediate_Value <= "0000";
-        Reg_EN <= "110"; -- Enable the dummy register
+        Reg_EN <= "000";
         Address_to_Jump <= "000";
  
                      
