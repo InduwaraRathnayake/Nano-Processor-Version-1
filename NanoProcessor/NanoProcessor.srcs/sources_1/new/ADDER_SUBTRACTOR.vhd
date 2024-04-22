@@ -99,8 +99,6 @@ begin
         S <= OutSum ;                          
         OverFlow <= C4 XOR C3;
     
---      Sign_Flag <= OutSum(3);           -- OutSum(3) AND NOT(OverFlow);
-    
         Flag_Reg(0) <= C4;                                                                          --C
         Flag_Reg(1) <= OverFlow;                                                                    --O
         Flag_Reg(2) <= NOT (OutSum(0) OR OutSum(1) OR OutSum(2) OR OutSum(3));                      --Z

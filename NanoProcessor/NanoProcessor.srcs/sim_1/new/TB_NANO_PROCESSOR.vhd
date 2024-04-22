@@ -67,7 +67,7 @@ begin
         wait for 350 ns;
         
         Reset <= '0';
-        wait for 2000 ns;
+        wait for 1000 ns;
         
         Reset <= '1';
         wait;
